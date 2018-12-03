@@ -1,0 +1,20 @@
+*~
+*.bak
+
+# for bundler
+/.bundle
+/vendor
+
+# for npm
+node_modules
+
+# for parcel
+/.cache
+
+# for sass
+/.sass-cache
+
+# for jekyll
+/.jekyll-cache
+/_site
+source/assets

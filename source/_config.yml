@@ -1,0 +1,6 @@
+defaults:
+  - 
+    values:
+      layout: default
+plugins:
+  - jekyll-assets

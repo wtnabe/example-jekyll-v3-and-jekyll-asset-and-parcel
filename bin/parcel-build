@@ -1,0 +1,16 @@
+#! /bin/sh
+
+OPTS='--out-dir source/assets'
+
+if [ "$1" = "production" ];
+then
+    CMD=build
+    OPTS=$OPTS" --no-source-maps --no-cache"
+else
+    CMD=watch
+fi
+
+yarn parcel $CMD $OPTS \
+     assets/img/**/* \
+     assets/js/*.js \
+     assets/css/*.scss
